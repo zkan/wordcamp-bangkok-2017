@@ -5,6 +5,11 @@ function child_theme_enqueue_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'child_theme_enqueue_styles' );
 
+function load_dashicons_front_end() {
+	wp_enqueue_style( 'dashicons' );
+}
+add_action( 'wp_enqueue_scripts', 'load_dashicons_front_end' );
+
 function convert_to_uppercase( $content ) {
 	return strtoupper( $content );
 }

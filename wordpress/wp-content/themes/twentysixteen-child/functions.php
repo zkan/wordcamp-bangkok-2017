@@ -10,15 +10,15 @@ function load_dashicons_front_end() {
 }
 add_action( 'wp_enqueue_scripts', 'load_dashicons_front_end' );
 
-function convert_to_uppercase( $content ) {
-	return strtoupper( $content );
-}
-add_filter( 'the_content', 'convert_to_uppercase' );
-
 function print_hello() {
 	echo '<p>Hello, WordCamp!</p>';
 }
 add_action( 'wp_footer', 'print_hello' );
+
+function convert_to_uppercase( $content ) {
+	return strtoupper( $content );
+}
+add_filter( 'the_content', 'convert_to_uppercase' );
 
 function add_my_credit( $credits ) {
 	return $credits . '<span class="dashicons dashicons-facebook"></span>';

@@ -11,7 +11,7 @@ function load_dashicons_front_end() {
 add_action( 'wp_enqueue_scripts', 'load_dashicons_front_end' );
 
 function print_hello() {
-	echo '<p>Hello, WordCamp!</p>';
+	echo '<p style="color: white;">Hello, WordCamp!</p>';
 }
 add_action( 'wp_footer', 'print_hello' );
 

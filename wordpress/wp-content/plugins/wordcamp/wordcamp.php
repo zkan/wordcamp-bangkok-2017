@@ -2,7 +2,7 @@
 
 /**
  * Plugin Name: WordCamp Hook
- * Description: A simple plugin to test hooks at WordCamp Bangkok
+ * Description: A simple plugin to test hooks at WordCamp Bangkok 2017
  */
 
 function generate_credits() {
